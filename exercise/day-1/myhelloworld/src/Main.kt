@@ -45,17 +45,44 @@ fun main() {
 //    var finalPrice = totalAmount - discount
 //
 //    println(finalPrice)
-    var usage = 300.0
-    var electricBill= if (usage >= 0 && usage <= 100){
-        usage * 1.0
-    } else if (usage > 100.0 && usage <=200F){
-        ((usage-100F) * 1.5F) + 100F
+//    val usage = 300.0
+//    val electricBill = if (usage >= 0 && usage <= 100){
+//        usage * 1.0
+//    } else if (usage > 100.0 && usage <=200F){
+//        ((usage-100F) * 1.5F) + 100F
+//    }
+//    else if (usage > 200F){
+//        (usage - 200F) * 2F + 250F
+//    }
+//    else {
+//        null
+//    }
+//    println("Your electric bill is $" + electricBill)
+//    var tebakan = arrayOf(5, 3, 7, 0)
+//    var angkaRahasia = 7
+//    var i = 0
+//    while(i < tebakan.size){
+//        val angka = tebakan[i]
+//        println("tebakan anda: " + angka)
+//        if (angka == 0) {
+//            println("Game Over")
+//            break
+//        }
+//        else if (angka == angkaRahasia) {
+//            println("Selamat tebakan anda benar " + angka)
+//            break
+//        }
+//        i ++
+//
+//    }
+    var maxLiter = 50
+    var i = 0
+    while (i < maxLiter){
+        println("Liter : " + i)
+        if (i > 40){
+            println("Pengisian bensin sudah usai")
+            break
+        }
+        i = i + 5
     }
-    else if (usage > 200F){
-        (usage - 200F) * 2F + 250F
-    }
-    else {
-        null
-    }
-    println("Your electric bill is $" + electricBill)
 }
