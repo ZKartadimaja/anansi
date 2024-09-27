@@ -1,0 +1,35 @@
+Multiple Choice
+1. C
+2. C
+3. B
+4. B
+5. D
+
+True or False
+1. False
+2. True
+3. True
+4. True
+5. False
+
+Short Answer
+1. Null-safe, Readability, Kotlin eliminates some of the redundancy in the basic syntax of popular languages like Java.
+2. val is not changeable. You can't reassign a value to a variable that was declared using val . var is changeable for a variable whose value can change.
+3.Kotlin compiler throws NullPointerException immediately if it found any null argument is passed without executing any other statements
+4. IDK
+5. a technique that allows you to decouple components and improve the testability of your code. Manages object dependencies and improves testability
+6. IDK
+7. Lambdas = provide a shorthand syntax to write function, High-Order = a function which can accept a function as parameter or can return a function
+8. MVVM = Model - View - View Model, Architecture pattern which separate between business logic and UI
+9. Handle presentation logic and provide data for the View
+10. used to observe changes in data and is lifecycle-aware
+11. IDK
+12. IDK
+13. Kotlin uses type inference extensively for various scenarios, including local variables, function return types, complex expressions, collections, and even lambdas.
+14. Bundling related data into a structured unit, along with the methods used to work with that data.
+15. Bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically
+16. Checks what's in the database and returns the persisted data to the ViewModel for further visualization in the View
+17. Its compatibility with Java and its interoperability are two main benefits for mobile app developers.
+18. IDK
+19. Can implement application components as immutable objects and ensures that required dependencies are not null
+20. IDK
