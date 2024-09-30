@@ -15,7 +15,7 @@ Short Answer
 12. for (i in 1 .. 10) {}
 13. Sebuah function loop yang berguna untuk menyederhanakan if-else. Seperti halnya switch case di Java. When akan mencocokan input terhadap kondisi loop yang tersedia
 14. if (number % 2 == 0){
-    println(number)} //Ketika nilainya habis dibagi menjadi 2 maka nilai tersebut termasuk dalam kategori genap
+    println("genap")} //Ketika nilainya habis dibagi menjadi 2 maka nilai tersebut termasuk dalam kategori genap
 15. val = arrayOf("Hujan","Cerah","Berawan")
 
 Yes or No
