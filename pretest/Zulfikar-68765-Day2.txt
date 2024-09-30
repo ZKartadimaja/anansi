@@ -1,0 +1,92 @@
+Optional
+1. A
+2. D
+3. C
+4. B
+5. C
+
+Short Answer
+6. Var = mendifinisikan sebuah variabel yang nilainya dapat diubah-ubah, sedangkan val sebaliknya (konstan)
+7. menggunakan function listOf()
+8. Penyederhanaan dari if-else adalah menggunakan when
+9. IDK
+10. Lambdas = provide a shorthand syntax to write function
+11. class myClass {}
+12. for (i in 1 .. 10) {}
+13. Sebuah function loop yang berguna untuk menyederhanakan if-else. Seperti halnya switch case di Java. When akan mencocokan input terhadap kondisi loop yang tersedia
+14. if (number % 2 == 0){
+    println(number)} //Ketika nilainya habis dibagi menjadi 2 maka nilai tersebut termasuk dalam kategori genap
+15. val = arrayOf("Hujan","Cerah","Berawan")
+
+Yes or No
+16. No
+17. Yes
+18. Yes
+19. Yes
+20. Yes
+
+Incorrect Code
+21.
+var x = "Hello"
+x = "World"
+
+22. 
+    fun sum(a: Int, b: Int): Int {
+        return a + b
+    }
+    sum(5, 10)
+
+23. 
+val myList = mutablelistOf(1, 2, 3)
+    myList.add(4)
+
+24. 
+val name: String = null.toString()
+
+25.
+if (x > 5) {
+        println("x is greater than 5")
+    }
+
+26. 
+when (x) {
+        1 -> println("One")
+        2 -> println("Two")
+        else -> println("Other")
+    }
+
+27.
+fun greet(name: String) {
+    println("Hello,$name")
+}
+
+28.
+    val myVar = 10
+    val result = myVar + 5
+
+29. 
+val numbers = arrayOf(1, 2, 3)
+println(numbers[0])
+
+30.
+class Person(val name: String, val age: Int) {
+        fun greet() {
+            println("Hello, my name is " + name + " and I'm " + age)
+        }
+    }
+
+// STORY
+31.
+class MovieTheater {
+    private val availableSeats = mutableListOf(1, 2, 3, 4, 5)
+
+    fun reserveSeat(name: String, seatNumber: Int) {
+        if (seatNumber in availableSeats) {
+            availableSeats.remove(seatNumber)  // Remove the seat number to mark it as reserved
+            println("$name reserved seat $seatNumber.")
+        } else {
+            println("Seat $seatNumber is already reserved or does not exist.")
+        }
+    }
+}
+
