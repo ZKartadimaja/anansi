@@ -1,0 +1,42 @@
+1. B
+2. B
+3. C
+4. C
+5. 
+
+6. listOf() = Immutable (tidak bisa diubah-ubah) and mutableListOf() = Mutable (dapat diubah-ubah, ditimpa nilainya)
+7. onStop() = membuat aktivitas tidak lagi bisa diakses oleh user dan onDestroy() = menghapus aktivitas
+8. memiliki beban pemrograman lebih rendah
+9. IDK
+10. Elemen UI yang ditampilkan di layar seperti Text View, Button, Image View. ViewGroups = kontainer yang menampung view dan digunakan untuk mendefine layout
+11. ReycyclerView digunakan untuk mengelola layout yang kompleks sedangkan ListView digunakan untuk dasar list layout
+12. metode panggilan balik yang dipanggil saat suatu aktivitas memasuki status Dilanjutkan dan mulai berinteraksi dengan pengguna .
+13. meluncurkan coroutine baru secara bersamaan dengan kode lainnya, dan bekerja secara independen.
+14. memberi tahu objek Pengamat saat data yang mendasarinya berubah
+15. untuk merangkum data untuk pengontrol UI agar data bertahan dari perubahan konfigurasi.
+
+16. no
+17. yes
+18. no
+19. no
+20. yes
+
+21.
+val myList = mutableListOf(1, 2, 3)
+    myList.add(4)
+
+22. 
+IDK
+
+23.
+IDK
+
+24.
+val map = mutableMapOf(1 to "One", 2 to "Two")
+map[3] = "Three"
+
+25.
+IDK
+
+26.
+IDK
