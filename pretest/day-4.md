@@ -191,7 +191,7 @@
 ---
 
 
-31. #### **Story-based Question:**
+31. **Story-based Question:**
 
 #### **Story:**
 You are building an Android app that fetches data from a server using Retrofit. The app fetches user data and displays it in a `RecyclerView`. However, the app crashes when the data is fetched and loaded into the `RecyclerView`. 
