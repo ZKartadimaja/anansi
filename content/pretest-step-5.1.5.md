@@ -1,4 +1,4 @@
-
+   
 
 ### 1. **Create `MainActivity` and `SecondActivity`**
    - Make two activities: `MainActivity` (the starting activity) and `SecondActivity` (the one that returns a result).
