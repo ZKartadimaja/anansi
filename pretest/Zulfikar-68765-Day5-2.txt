@@ -1,0 +1,40 @@
+#### **Optional Questions:**
+1. A
+2. B
+3. B    
+4. B    
+5. B
+
+#### **True/False Questions:**
+1. True
+2. True
+3. False
+4. True
+5. False
+
+#### **Short Answer Questions:**
+1. To display a scrollable list of data
+2. Define the button in XML, Set Up Button in Kotlin, and Set Up Listener
+3. Linear Layout = Arranges its children in a single row or column. ConstraintLayout = Allows flexible UI design with constraints between views.
+4. Define the progress bar in XML, Set Up Progress Bar di Kotlin
+5. Used for selecting/deselecting options.
+
+#### **Code Fix Questions:**
+1. <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/sample_image"
+       android:text="Click me!" />
+
+2. <Button
+       android:id="@+id/button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Press Me" />
+
+3. <RecyclerView
+       android:id="@+id/recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
