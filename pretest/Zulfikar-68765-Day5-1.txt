@@ -1,0 +1,34 @@
+1. D
+2. B
+3. A
+4. C
+5. B
+
+6. F
+7. T
+8. F
+9. T
+10. F
+
+11. onPause() dipanggil ketika aktivitas sebagian tertutup atau akan kehilangan fokus (misalnya, ketika aktivitas lain dibuka, tetapi aktivitas saat ini masih terlihat). menghentikan aplikasi sementara.
+onStop() dipanggil ketika aktivitas tidak lagi terlihat oleh pengguna (misalnya, ketika aktivitas sepenuhnya tertutup oleh aktivitas lain atau ketika pengguna menavigasi pergi).
+
+12. IDK
+
+13. function tersebut memungkinkan untuk menyimpan status saat ini dari aktivitas sebelum dihancurkan selama perubahan konfigurasi, seperti rotasi layar.
+
+14. Ketika tombol kembali ditekan, umumnya terjadi: onPause() dipanggil terlebih dahulu, memungkinkan aktivitas untuk menghentikan tugas atau proses yang sedang berjalan. Selanjutnya, onStop() dipanggil, yang menunjukkan bahwa aktivitas tidak lagi terlihat. Akhirnya, onDestroy() dipanggil, yang memungkinkan aktivitas untuk melakukan pembersihan terakhir sebelum dihapus dari memori.
+
+15. IDK
+
+// Incorrect Code
+1. val intent = Intent(this, MainActivity::class.java)
+startActivity(intent)
+2. override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main) // Replace with your layout resource
+}
+3. override fun onDestroy() {
+    super.onDestroy()
+}
+

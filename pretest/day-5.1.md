@@ -83,15 +83,15 @@
    3. In the `MainActivity`, use `setContentView(R.layout.activity_main)` to bind the layout.
    4. Run the app and ensure the message is displayed.
 
-#### 2. **Passing Data Between Activities**
-   **Task:**
-   - Create two activities: one to collect a user’s name and another to display it.
-   
-   **Instructions:**
-   1. Create two activities: `MainActivity` and `DisplayActivity`.
-   2. In `MainActivity`, add an `EditText` and a `Button` in the layout.
-   3. On button click, pass the name entered in `EditText` to `DisplayActivity` using an `Intent`.
-   4. In `DisplayActivity`, retrieve the name from the intent and display it in a `TextView`.
+   #### 2. **Passing Data Between Activities**
+      **Task:**
+      - Create two activities: one to collect a user’s name and another to display it.
+      
+      **Instructions:**
+      1. Create two activities: `MainActivity` and `DisplayActivity`.
+      2. In `MainActivity`, add an `EditText` and a `Button` in the layout.
+      3. On button click, pass the name entered in `EditText` to `DisplayActivity` using an `Intent`.
+      4. In `DisplayActivity`, retrieve the name from the intent and display it in a `TextView`.
 
 #### 3. **Activity Lifecycle Logging**
    **Task:**
