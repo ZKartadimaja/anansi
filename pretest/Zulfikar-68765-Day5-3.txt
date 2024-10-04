@@ -1,0 +1,41 @@
+1. B
+2. B
+3. B
+4. B
+5. D
+
+// T/F
+1. F
+2. F
+3. T
+4. F
+5. T
+
+// Short Answer
+1. apply() for asynchronous saving, commit() for synchronous saving
+2. 
+val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
+val editor = sharedPref.edit(), editor.putBoolean("isLoggedIn", true)
+3.
+val sharedPref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+   val username = sharedPref.getString("username", null)
+   val isLoggedIn = sharedPref.getBoolean("isLoggedIn", false)
+4. Simple, Lightweight, Synchronous and Asynchronous Options
+5. Yes, Using apply() or commit(). allowing multiple threads to call apply() without waiting for other threads to finish. and for commit()It blocks the calling thread until the write operation is complete, which can lead to performance bottlenecks if called from multiple threads simultaneously.
+
+// Incorrect Code
+1. 
+val sharedPref = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+   val editor = sharedPref.edit()
+   editor.putString("username", "JohnDoe")
+   editor.apply()
+
+2. 
+val sharedPref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+val username = sharedPref.getString("username", "defaultName")
+
+3.
+val editor = sharedPref.edit()
+editor.remove("username")
+editor.commit()
+

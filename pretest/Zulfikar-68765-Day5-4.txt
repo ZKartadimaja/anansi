@@ -1,0 +1,58 @@
+1. B
+2. B
+3. B
+4. E
+5. A
+
+// T/F
+1. T
+2. F
+3. T
+4. F
+5. F
+
+//Short Answer
+1. Converts JSON data to Java/Kotlin objects
+2. 
+val call = retrofit.create(ApiService::class.java).getUsers()
+   call.enqueue(object : Callback<List<User>> {
+       override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
+           if (response.isSuccessful) {
+               val users = response.body()
+               // Handle the data
+           }
+       }
+
+       override fun onFailure(call: Call<List<User>>, t: Throwable) {
+           // Handle the error
+       }
+   })
+3. 
+For network requests on Android, synchronous calls are not the best option since they stall the main thread until the request is fulfilled.
+The application can continue to function while the request is being processed thanks to asynchronous calls. Retrofit automatically makes background network calls.
+4.
+Use `@Query` to append query parameters to the URL.
+   @GET("users")
+   fun getUsers(@Query("page") page: Int): Call<List<User>>
+5.
+override fun onFailure(call: Call<List<User>>, t: Throwable) {
+    Log.e("Network Error", "Error: ${t.message}")
+}
+
+// Incorrect Code
+1.
+@GET("users")
+   fun getUsers(): Call<List<User>> {
+   }
+
+2.
+@POST("login")
+@FormUrlEncoded
+   fun loginUser(@Body credentials: Map<String, String>): Call<LoginResponse>
+   val response = loginUser("username", "password")
+
+3.
+@GET("user/{id}")
+fun getUserById(@Path("id") userId: Int): Call<User>
+getUserById(123)
+

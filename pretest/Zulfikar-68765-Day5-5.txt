@@ -1,0 +1,38 @@
+1. C
+2. C
+3. A
+4. B
+5. B
+
+// T/F
+1. F
+2. F
+3. T
+4. T
+5. F
+
+// Short Answer
+1. class for playing audio files saved locally or remotely (URL).
+2. Add a 'VideoView' to the layout: 
+    - Declare a 'VideoView' in the activity's XML layout file. Load and play video:**
+    - For internet videos, use'setVideoURI()', whereas for local files, use'setVideoPath()'.
+    - To begin playback, call'start()'.
+3. To set up camera functionality in an Android app, first, add the CAMERA permission to the AndroidManifest.xml. Then, launch the camera app by using Intent.ACTION_IMAGE_CAPTURE to take a photo. Finally, handle the resulting image by saving it in either internal or external storage, depending on your specific requirements.
+4. runtime permissions
+5.start by initializing the MediaPlayer object, which can load audio from either raw resources or a file path, supporting formats like .mp3 and .wav. To control playback, use start() to play the audio and stop() or pause() to halt it. Finally, always call release() when you're finished to free up system resources.
+
+// Incorrect Code
+1.
+val mediaPlayer = MediaPlayer()
+mediaPlayer.setDataSource(context, Uri.parse("android.resource://your.package.name/raw/audio"))
+mediaPlayer.prepare()
+mediaPlayer.start()
+
+2. 
+val videoView: VideoView = findViewById(R.id.videoView)
+videoView.setVideoPath("video.mp4")
+videoView.start()
+
+3.
+val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+startActivityForResult(intent, REQUEST_CODE)

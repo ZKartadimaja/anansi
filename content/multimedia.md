@@ -61,7 +61,7 @@ The `VideoView` class in Android provides an easy way to display video content.
 
 ---
 
-#### **Recording Video**
+#### **Recording Video** 
 You can use the device’s camera to capture video using the `MediaRecorder` API or the `Camera` intent.
 
 - **Use Case**: Allow users to capture videos, like in social media apps.
